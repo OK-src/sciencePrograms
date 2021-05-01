@@ -1,10 +1,11 @@
-  ####    #    #
- #    #   #   #
-#      #  ## #
-#      #  # #
-#      #  #  #
- #    #   #   #
-  ####    #    #
+#            88         
+#            88         
+#            88         
+# ,adPPYba,  88   ,d8   
+#a8"     "8a 88 ,a8"    
+#8b       d8 8888[      
+#"8a,   ,a8" 88`"Yba,   
+# `"YbbdP"'  88   `Y8a  
 
 #--Variabili e librerie utili--#
 import random
