@@ -1,7 +1,7 @@
 # sciencePrograms
-Simple programs to make science exercise
+Simple programs to complete science exercises
 --------------------------------------------------------
-Istruzioni per reactionBalancer.py:
-- rispondere alla domanda "Quale elemento è presente in questa equazione?" elecando gli elementi presenti.
-- rispondere alla domanda "Come si chiama questa molecola?" elencando le molecole e successivamente il numero di atomi man mano che vengono chiesti.
-- rispondere alla domanda "Qual è il massimo coefficiente?" tenendo conto del fatto che un coefficiente troppo elevato prolunherà notevolmente la durata dell'esecuzione, mentre se il coefficiente ha valore minore del massimo coefficiente che dovrebbe risultare fuori dalla reazione l'esecuzione non terminerà mai.
+Instructions for reactionBalancer.py:
+- Respond to "What element is present in this equation?" by listing the present elements.
+- Respond to "What is the name of this molecule?" by listing the molecules and later the number of atoms as they are asked for.
+- Respond to "What is the maximum coefficient?" note that a high coefficient may slow down the program significantly, and that if the coefficent is smaller than the maximum coefficient the program will run forever
