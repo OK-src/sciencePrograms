@@ -1,6 +1,6 @@
 COMPILER = gcc
 COMPILED_FILE_NAME = reactionBalancer
-LANG = ITA
+LANG = ENG
 ROOT = sudo
 
 all:
