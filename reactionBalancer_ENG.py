@@ -17,10 +17,10 @@ Contatore2 = 0 #Un'altra variabile che userò per contare cicli che avvengo in c
 #--Determinazione degli elementi della reazione--#
 Elementi = [] #Lista degli elementi che reagiranno
 while Stato != 'S': #Ciclo di registrazione degli elementi coinvolti
-	Elemento = input("What element is present in this equation?")
+	Elemento = input("What element is present in this equation? ")
 	Elementi += [Elemento]
-	Stato = input("Was this the last element? (Y/n)")
-print("In total, here are the elements that you selected:")
+	Stato = input("Was this the last element? (Y/n) ")
+print("In total, here are the elements that you selected: ")
 print(Elementi)
 
 #--Assegnazione degli atomi alle molecole--#
@@ -28,14 +28,14 @@ print(Elementi)
 print("Now you have to insert the molecules present on the left hand side of the equals sign.")
 MolecoleSinistra = []
 while Stato != 'n': #Ciclo di creazione delle molecole all'interno di "MolecoleSinistra"
-	Nome = input("What is the name of this molecule?")
+	Nome = input("What is the name of this molecule? ")
 	MolecoleSinistra += [Nome] #Il nome della molecola servirà a fornire l'output della risposta
 	Contatore1 = 0
 	while Contatore1 < len(Elementi) : #Ciclo di inserimento degli atomi in ogni molecola
 		Elemento = input("How many atoms of " + Elementi[Contatore1] + " does this molecule have?") #Riciclo della variabile "Elemento" per contare la quantita di elementi presente in ogni molecola
 		MolecoleSinistra += [int(Elemento)]
 		Contatore1 += 1
-	Stato = input("Is there another molecule to consider? (Y/n)")
+	Stato = input("Is there another molecule to consider? (Y/n) ")
 print(MolecoleSinistra)
 
 #Molecole dalla parte destra dell'uguale
@@ -43,14 +43,14 @@ print("Now you have to insert the molecules present on the right hand side of th
 Stato = 'S'
 MolecoleDestra = []
 while Stato != 'n': #Ciclo di creazione delle molecole all'interno di "MolecoleDestra"
-	Nome = input("What is the name of this molecule?")
+	Nome = input("What is the name of this molecule? ")
 	MolecoleDestra += [Nome] #Il nome della molecola servirà a fornire l'output della risposta
 	Contatore1 = 0
 	while Contatore1 < len(Elementi): #Ciclo di inserimento degli atomi in ogni molecola
 		Elemento = input("How many atoms of " + Elementi[Contatore1] + " does this molecule have?") #Riciclo della variabile "Elemento" per contare la quantita di elementi presente in ogni molecola
 		MolecoleDestra += [int(Elemento)]
 		Contatore1 += 1
-	Stato = input("Is there another molecule to consider? (Y/n)")
+	Stato = input("Is there another molecule to consider? (Y/n) ")
 print(MolecoleDestra)
 
 ##-------Creazione di funzioni e variabili che serviranno dopo--------##
@@ -71,7 +71,7 @@ NumeroMolecoleSinistra = len(MolecoleSinistra) / (len(Elementi) + 1)
 NumeroMolecoleDestra = len(MolecoleDestra) / (len(Elementi) + 1)
 
 ##-------------Effettuazione di tentativi di risoluzione--------------##
-FattoreMassimo = int(input("What is the maximum coefficient?"))
+FattoreMassimo = int(input("What is the maximum coefficient? "))
 
 Stato = 'Attempt failed!'
 while Stato == 'Attempt failed!': #Ciclo di generazione e validazione dei tentativi
